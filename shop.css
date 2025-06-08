@@ -739,10 +739,13 @@ footer div p {
         margin: 0 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 10px;
     }
 
     .section-top-item .section-item {
         padding: 10px;
+        width: 162px;
     }
 
     .section-in-top img {
@@ -782,10 +785,13 @@ footer div p {
         margin: 0 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 10px;
     }
 
     .section-bottom-item .section-item {
         padding: 10px;
+        width: 162px;
     }
 
     .section-in-bottom img {
@@ -803,6 +809,8 @@ footer div p {
 
     .section-item p {
         font-size: 0.6rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .section-item h4 {
