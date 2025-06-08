@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
 
     if (user) {
         alert(`Welcome back, ${user.name}!`);
-        window.location.href = "shop.html";
+        window.location.href = "index.html";
         form.reset();
     } else {
         alert("Invalid email or password. Please try again.");
