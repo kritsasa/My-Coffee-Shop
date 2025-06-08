@@ -728,7 +728,7 @@ footer div p {
     }
 
     .section-top {
-        margin: 10px;
+        margin: 70px;
     }
 
     .section-top-con h1 {
@@ -736,7 +736,7 @@ footer div p {
     }
 
     .section-top-item {
-        margin: 0 10px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -774,7 +774,7 @@ footer div p {
         padding: 3px 8px;
     }
     .section-bottom {
-        margin: 10px;
+        margin: 70px;
     }
 
     .section-bottom-con h1 {
@@ -782,7 +782,7 @@ footer div p {
     }
 
     .section-bottom-item {
-        margin: 0 10px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -809,8 +809,6 @@ footer div p {
 
     .section-item p {
         font-size: 0.6rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
     }
 
     .section-item h4 {
