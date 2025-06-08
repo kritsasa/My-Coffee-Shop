@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-con">
+            <div class="logo">
+                <i class="fa-solid fa-bars" id="navBarOpenBtn" style="color: #ffffff;"></i>
+                <h1>COFFEE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">COFFEE</a></li>
+                    <li><a href="#">BAKERY</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <i class="fa-solid fa-cart-shopping" id="cart" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-moon" id="themeMode" style="color: #ffffff;"></i>
+                <a href="login.html">LOGIN</a>
+            </div>
+        </div>
+
+        <div class="nav-bar" id="navBar">
+            <i class="fa-solid fa-bars" id="navBarCloseBtn"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COFFEE</a></li>
+                <li><a href="#">BAKERY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+
+        <div id="cartZone" class="cart-zone">
+            <div class="head-cart">
+                <i class="fa-solid fa-cart-shopping" id="cartOut"></i>
+                <h4>Shopping Cart</h4>
+            </div>
+            <div id="cartArea">
+
+            </div>
+            <div id="resultCart">
+                <div class="total">
+                    <h4>Total:</h4>
+                    <h4 id="totalPrice">0 ฿</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero">
+            <h2>Welcome!</h2>
+            <h1>We serve the richeat coffee<br>in the city!</h1>
+            <button id="orderNowBtn">Order Now</button>
+        </div>
+
+        <div class="bottom-hero">
+            <div class="bottom-hero-item">
+                <div class="item1">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <p>Hot Coffee</p>
+                </div>
+                <div class="item2">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <p>Cold Coffee</p>
+                </div>
+                <div class="item3">
+                    <i class="fas fa-bread-slice"></i>
+                    <p>Bread</p>
+                </div>
+                <div class="item4">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>Dessert</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-top">
+        <div class="section-top-con" id="coffeeSection">
+            <h1>OUR SPECIAL COFFEE</h1>
+        </div>
+        <div class="section-top-item">
+            <div class="section-item">
+                <div class="section-in-top">
+                    <img src="https://bdwebkit.com/breakdance-coffee-shop-layouts-pack/wp-content/uploads/sites/30/2024/01/coffe-shop-product-7.png"
+                        alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Lungo Coffee</h3>
+                <p>An espreeso coffee drink, topped with a small</p>
+                <h4>199 ฿</h4>
+                <button class="addCart" data-id="1" data-name="Lungo Coffee" data-price="199">Add to Cart</button>
+            </div>
+            <div class="section-item">
+                <div class="section-in-top">
+                    <img src="https://madaboutkitchen.in/wp-content/uploads/2020/04/Dolgona-Coffee-.jpg" alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Dalgona Coffee</h3>
+                <p>Whipped coffee mode using instant coffee</p>
+                <h4>159 ฿</h4>
+                <button class="addCart" data-id="2" data-name="Dalgona Coffee" data-price="159">Add to Cart</button>
+            </div>
+            <div class="section-item">
+                <div class="section-in-top">
+                    <img src="https://www.spicebangla.com/wp-content/uploads/2024/07/Iced-coffee-Recipe3.jpg" alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Iced Coffee</h3>
+                <p>Iced coffee is a coffee beverage served cold</p>
+                <h4>149 ฿</h4>
+                <button class="addCart" data-id="3" data-name="Iced Coffee" data-price="149">Add to Cart</button>
+            </div>
+            <div class="section-item">
+                <div class="section-in-top">
+                    <img src="https://i.pinimg.com/736x/e1/d9/04/e1d904e40b75e65bd0c88287a350838b.jpg" alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Filter Coffee</h3>
+                <p>75% coffee and 25% chicory freshy roostod</p>
+                <h4>59 ฿</h4>
+                <button class="addCart" data-id="4" data-name="Filter Coffee" data-price="59">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bottom">
+        <div class="section-bottom-con">
+            <h1>OUR SPECIAL DESSERT</h1>
+        </div>
+        <div class="section-bottom-item">
+            <div class="section-item">
+                <div class="section-in-bottom">
+                    <img src="https://media.istockphoto.com/id/1188000786/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/gulab-jamun-%E0%B9%83%E0%B8%99%E0%B8%8A%E0%B8%B2%E0%B8%A1%E0%B8%9A%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89-%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%88%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99.jpg?s=612x612&w=0&k=20&c=RDwfMjP2aTIsUAWjxpFY2osIVJq0a-xzC3Al0H9Q8fQ="
+                        alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Gulab Jamum</h3>
+                <p>made with milk solds, sugar, rose water & cord</p>
+                <h4>199 ฿</h4>
+                <button class="addCart" data-id="5" data-name="Gulab Jamum" data-price="199">Add to Cart</button>
+            </div>
+            <div class="section-item">
+                <div class="section-in-bottom">
+                    <img src="https://prettysimplesweet.com/wp-content/uploads/2016/05/ChocolateTiramisu_03.jpg" alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Chocolate Tiramisu</h3>
+                <p>Made with layers of mascarpone cream</p>
+                <h4>250 ฿</h4>
+                <button class="addCart" data-id="6" data-name="Chocolate Tiramisu" data-price="250">Add to Cart</button>
+            </div>
+            <div class="section-item">
+                <div class="section-in-bottom">
+                    <img src="https://thenovicechefblog.com/wp-content/uploads/2014/04/Churros-17.jpeg" alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Churros</h3>
+                <p>Hot chocolate made with buttersweet chocolate</p>
+                <h4>170 ฿</h4>
+                <button class="addCart" data-id="7" data-name="Churros" data-price="170">Add to Cart</button>
+            </div>
+            <div class="section-item">
+                <div class="section-in-bottom">
+                    <img src="https://i0.wp.com/gey.yiq.mybluehost.me/wp-content/uploads/2021/06/DSC09319.jpg?w=750&ssl=1"
+                        alt="">
+                    <i class="fa-solid fa-heart nonactive"></i>
+                </div>
+                <h3>Australian Lamingtons</h3>
+                <p>Made with A Delicious Sponge Cake</p>
+                <h4>280 ฿</h4>
+                <button class="addCart" data-id="8" data-name="Australian Lamingtons" data-price="280">Add to
+                    Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h1>COFFEE</h1>
+        <div>
+            <h2>PRIVACY</h2>
+            <p>Terms of use</p>
+            <p>Privacy polocy</p>
+            <p>cookies</p>
+        </div>
+        <div>
+            <h2>SERVICES</h2>
+            <p>Shop</p>
+            <p>Order ahead</p>
+            <p>Menu</p>
+        </div>
+        <div>
+            <h2>ABOUT US</h2>
+            <p>Find a location</p>
+            <p>About us</p>
+            <p>Our story</p>
+        </div>
+        <div>
+            <h2>INFORMATION</h2>
+            <p>Plans & pricing</p>
+            <p>Sell your products</p>
+            <p>Jobs</p>
+        </div>
+        <div>
+            <h2>SOCIAL MEDIA</h2>
+            <div class="contact">
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-line" style="color: #ffffff;"></i>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="shop.js"></script>
+    <script src="https://kit.fontawesome.com/c6ffb7a0ad.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
