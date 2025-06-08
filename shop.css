@@ -681,7 +681,7 @@ footer div p {
 
 
 /* Responsive */
-@media (max-width: 396px) {
+@media (max-width: 480px) {
     .logo {
         margin: 10px;
     }
