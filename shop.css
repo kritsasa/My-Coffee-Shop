@@ -78,7 +78,7 @@ nav ul a:hover {
     align-items: center;
 }
 
-.login a {
+.login div a {
     display: inline-block;
     text-decoration: none;
     font-size: 0.8rem;
@@ -89,10 +89,22 @@ nav ul a:hover {
     transition: color 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
 }
 
-.login a:hover {
+.login div a:hover {
     color: #000;
     background-color: #fff;
     transform: scale(1.1);
+}
+
+#userLogout {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#userLogout:hover {
+    font-size: 1.5rem;
 }
 
 .login i {
@@ -104,6 +116,7 @@ nav ul a:hover {
 .login i:hover {
     font-size: 1.5rem;
 }
+
 
 /* Navbars for Responsive */
 .nav-bar {
@@ -173,6 +186,75 @@ body.dark-mode .nav-bar ul a {
 body.dark-mode .nav-bar ul a:hover {
     color: #fff;
     font-size: 1.2rem;
+}
+
+/* Logont Bar */
+.logout-bar {
+    background-color: #fffaf5;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 150px;
+    padding: 20px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .logout-bar {
+    background-color: #161616;
+}
+
+.logout-bar.active-logout {
+    transform: translateY(0);
+}
+
+.logout-bar i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #271d0e;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .logout-bar i {
+    color: #fff;
+}
+
+.logout-bar i:hover {
+    font-size: 25px;
+}
+
+.logout-bar button {
+    background-color: #88512a;
+    border: none;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    right: 25%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.dark-mode .logout-bar button {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.logout-bar button:hover {
+    background-color: #a0660f;
+    transform: scale(1.1);
+}
+
+body.dark-mode .logout-bar button:hover {
+    background-color: #000;
+    transform: scale(1.1);
 }
 
 /* CART STYLE */
@@ -696,6 +778,14 @@ footer div p {
 
     .login {
         margin: 10px;
+    }
+
+    #userLogout {
+        font-size: 0.9rem;
+    }
+    
+    #userLogout:hover {
+        font-size: 1.2rem;
     }
 
     .hero h2 {

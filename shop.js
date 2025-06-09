@@ -129,8 +129,41 @@ navBarOpenBtn.addEventListener("click", () => {
   if (cartZone.classList.contains("active-cart")) {
     cartZone.classList.remove("active-cart");
   }
+  if (logoutBar.classList.contains("active-logout")) {
+    logoutBar.classList.remove("active-logout");
+  }
 })
 
 navBarCloseBtn.addEventListener("click", () => {
   document.getElementById("navBar").classList.remove("active-bar");
 })
+
+// Show Logged In User
+
+const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+const loginUser = document.getElementById("loginUser");
+if (loggedInUser) {
+  loginUser.innerHTML = `<p id="userLogout">${loggedInUser.name}</p>`
+} else {
+  loginUser.innerHTML = `<a href="login.html">LOGIN</a>`
+}
+
+const userLogout = loginUser.querySelector("#userLogout");
+const logoutBar = document.getElementById("logoutBar");
+
+userLogout.addEventListener("click", () => {
+  logoutBar.classList.toggle("active-logout");
+});
+
+const closeLogoutBar = document.getElementById("closeLogoutBar");
+
+closeLogoutBar.addEventListener("click", () => {
+  logoutBar.classList.remove("active-logout");
+})
+
+const logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+  localStorage.removeItem("loggedInUser");
+  window.location.reload();
+})
+

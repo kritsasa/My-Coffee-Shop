@@ -17,6 +17,10 @@ form.addEventListener("submit", (e) => {
     const user = userData.find(user => user.email === emailValue && user.password === passwordValue);
 
     if (user) {
+        localStorage.setItem("loggedInUser", JSON.stringify(user));
+    }
+
+    if (user) {
         alert(`Welcome back, ${user.name}!`);
         window.location.href = "index.html";
         form.reset();
