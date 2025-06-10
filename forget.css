@@ -78,3 +78,30 @@ body {
     color: #000;
     transform: scale(1.05);
 }
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .forget {
+        padding: 35px 70px;
+    }
+
+    .forget h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        width: 200px;
+    }
+
+    .forget-btn {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+}

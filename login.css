@@ -106,3 +106,34 @@ body {
     color: #fff;
     text-decoration: underline;
 }
+
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .login {
+        padding: 35px 70px;
+    }
+
+    .login h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        width: 200px;
+    }
+
+    .forget-btn {
+        font-size: 12px;
+    }
+
+    .login-btn {
+        padding: 8px;;
+        font-size: 13px;
+    }
+}
