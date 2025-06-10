@@ -24,6 +24,7 @@ const cartOut = document.getElementById("cartOut");
 const cartZone = document.getElementById("cartZone");
 const addCartBtns = Array.from(document.querySelectorAll(".addCart"));
 
+// Toggle Cart Zone
 cartBtn.addEventListener("click", () => {
   cartZone.classList.toggle("active-cart");
 });
@@ -95,6 +96,20 @@ function randerCart() {
     result.innerHTML = `${totalPrice} ฿`;
   })
 }
+
+// checkout 
+const checkoutBtn = document.getElementById("checkOut");
+
+checkoutBtn.addEventListener("click", () => {
+  if (cartItems.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+  cartItems.length = 0; // Clear the cart
+  alert("Thank you for your purchase!");
+  randerCart();
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+})
 
 // Theme Mode 
 const themeMode = document.getElementById("themeMode");

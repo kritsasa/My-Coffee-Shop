@@ -400,6 +400,32 @@ body.dark-mode #resultCart .total {
     color: #fff;
 }
 
+#checkOut {
+    background-color: #88512a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+body.dark-mode #checkOut {
+    background-color: #444;
+    color: #ffffff;
+}
+
+#checkOut:hover {
+    background-color: #a0660f;
+    transform: scale(1.05);
+}
+
+body.dark-mode #checkOut:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
 .hero {
     display: flex;
     flex-direction: column;
