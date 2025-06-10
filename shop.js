@@ -108,6 +108,8 @@ checkoutBtn.addEventListener("click", () => {
   cartItems.length = 0; // Clear the cart
   alert("Thank you for your purchase!");
   randerCart();
+  const result = document.getElementById("totalPrice");
+  result.innerHTML = "0 ฿"; // Reset total price
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 })
 
